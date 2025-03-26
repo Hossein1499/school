@@ -138,4 +138,21 @@ iconSurvey5.addEventListener('click', function (e) {
         iconSurveyChecked4 = false;
     };
     e.preventDefault();
+});
+
+let article1 = document.querySelector('.quick article:nth-of-type(1)');
+let article2 = document.querySelector('.quick article:nth-of-type(2)');
+let article3 = document.querySelector('.quick article:nth-of-type(3)');
+let article4 = document.querySelector('.quick article:nth-of-type(4)');
+let article5 = document.querySelector('.quick article:nth-of-type(5)');
+let article6 = document.querySelector('.quick article:nth-of-type(6)');
+
+article1.addEventListener('click', function (e) {
+    window.location.href = 'web_pages/news/html/news.html';
+})
+article2.addEventListener('click', function (e) {
+    window.location.href = 'web_pages/best/html/best.html';
+})
+article4.addEventListener('click', function (e) {
+    window.location.href = 'web_pages/weekdays/html/weekdays.html';
 })
