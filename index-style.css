@@ -1,4 +1,4 @@
-@import url('../../../style_main/original.css');
+@import url('style_main/original.css');
 
 /* header */
 
@@ -63,7 +63,7 @@
 }
 
 .img-back-history {
-    background-image: url('../../../image/computer/image-2/IMG_20230916_173333_274.jpg');
+    background-image: url('image/computer/image-2/IMG_20230916_173333_274.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
