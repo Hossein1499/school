@@ -1,0 +1,21 @@
+@import url('../../../style_main/original.css');
+
+.img-article {
+    width: 70%;
+}
+
+.text-article {
+    width: 100%;
+    line-height: 25px;
+}
+
+.hr-title::after {
+    content: '';
+    width: 83%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid var(--bg-gray);
+    transform: translateY(-50%);
+}

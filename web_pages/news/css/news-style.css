@@ -1,0 +1,45 @@
+@import url('../../../style_main/original.css');
+
+main {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.sidebar-new::-webkit-scrollbar {
+    width: 12px;
+}
+
+.sidebar-new::-webkit-scrollbar-thumb {
+    background: var(--bg1);
+    border-radius: 50px;
+}
+
+.news {
+    border-left: 1px double !important;
+    border-bottom: 1px double !important;
+}
+
+.text-flow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.news-box {
+    grid-template-columns: auto;
+}
+
+.offcanvas-md {
+    --bs-offcanvas-width: 260px;
+}
+
+.list-title-news li {
+    border-bottom: 1px solid var(--bg1);
+}
+
+.list-title-news li:hover {
+    border-bottom: 1px solid var(--bg1-hover);
+    font-weight: bold !important;
+}

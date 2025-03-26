@@ -1,0 +1,19 @@
+@import url('../../../style_main/original.css');
+
+.list-class li{
+    box-shadow: 0px 0px 12px 1px var(--bg-gray);
+    transition: transform .2s ease;
+    cursor: pointer;
+}
+
+.list-class li:hover{
+    transform: translateX(10px);
+}
+
+.list-class li p:first-of-type{
+    font-family: var(--font-number) !important;
+}
+
+.sidebar-new .offcanvas-lg{
+    --bs-offcanvas-width: 260px;
+}
