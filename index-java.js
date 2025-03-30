@@ -156,3 +156,6 @@ article2.addEventListener('click', function (e) {
 article4.addEventListener('click', function (e) {
     window.location.href = 'web_pages/weekdays/html/weekdays.html';
 })
+article6.addEventListener('click', function (e) {
+    window.location.href = 'web_pages/calendar/html/calendar.html';
+})
