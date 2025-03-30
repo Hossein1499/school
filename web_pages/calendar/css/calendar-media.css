@@ -1,0 +1,59 @@
+@media screen and (min-width: 576px) {}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 992px) {
+    .headline {
+        position: sticky !important;
+        top: 75px;
+    }
+    main {
+        grid-template-columns: 190px auto;
+    }
+    .sidebar-calender .offcanvas-body,
+    .sidebar-calender .offcanvas-lg{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {}
+
+
+/* /////////////////////////////////////////////////////////////////////// */
+
+
+@media screen and (min-height: 400px) {
+    .headline section:first-child {
+        row-gap: .25rem !important;
+    }
+}
+
+@media screen and (min-height: 450px) {
+    .headline section:first-child {
+        row-gap: .5rem !important;
+    }
+}
+
+@media screen and (min-height: 490px) {
+    .headline section:first-child {
+        row-gap: .9rem !important;
+    }
+}
+
+@media screen and (min-height: 530px) {
+    .headline section:first-child {
+        row-gap: 1.2rem !important;
+    }
+}
+
+@media screen and (min-height: 560px) {
+    .headline section:first-child {
+        row-gap: 1.5rem !important;
+    }
+}
+
+@media screen and (min-height: 590px) {
+    .headline section:first-child {
+        row-gap: 1.9rem !important;
+    }
+}

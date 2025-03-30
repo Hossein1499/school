@@ -1,0 +1,86 @@
+@import url('../../../style_main/original.css');
+
+:root {
+    --border-color-box: #999;
+}
+
+/* sidebar-calender */
+.sidebar-calender .offcanvas-lg {
+    --bs-offcanvas-width: 260px;
+}
+
+/* notebook */
+.notebook .card-header {
+    background-color: var(--bg2);
+    padding: 10px 22px;
+}
+
+.notebook .card-body {
+    background-color: var(--bg-gray);
+}
+
+.notebook .card-body .card-text:last-of-type {
+    font-family: font-number !important;
+    font-size: 12px;
+}
+
+.notebook .card-body .card-text {
+    color: var(--text-gray) !important;
+}
+
+.wire div:first-child {
+    height: 36px;
+    width: 12px;
+}
+
+.wire div:last-child {
+    padding: 13px;
+}
+
+/* headline */
+.headline {
+    padding-bottom: 70px;
+    border-color: var(--border-color-box) !important;
+    height: calc(100vh - 115px);
+}
+
+.color-brown {
+    color: #d7b366 !important;
+}
+
+.color-red {
+    color: #ec1921 !important;
+}
+
+.color-blue {
+    color: #2ca1d7 !important;
+}
+
+.color-yellow {
+    color: #f09d1f !important;
+}
+
+.color-purple {
+    color: #642789 !important;
+}
+
+.color-green {
+    color: #18a25e !important;
+}
+
+.color-dark {
+    color: #0d2b63 !important;
+}
+
+.headline section:last-child img {
+    height: 35px;
+}
+
+/* month */
+.month {
+    border-color: var(--border-color-box) !important;
+}
+
+.month h2 {
+    color: var(--bg2-hover) !important;
+}
