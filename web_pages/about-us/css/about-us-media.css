@@ -1,0 +1,44 @@
+@media screen and (min-width: 576px) {}
+
+@media screen and (min-width: 768px) {
+    .generator:nth-child(1) {
+        display: block;
+    }
+
+    .generator:nth-child(2) {
+        display: inline;
+    }
+
+    .history {
+        width: 70%;
+        padding: 23px 57px 23px 30px !important;
+        top: -20px;
+    }
+
+    .history-img {
+        top: 50% !important;
+        left: 100% !important;
+    }
+
+    .facilities {
+        height: 300px;
+    }
+
+    .facilities article {
+        flex: 1;
+        cursor: pointer;
+        transition: flex .2s;
+    }
+
+    .active {
+        flex: 3 !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .statistics h2 {
+        font-size: 38px;
+    }
+}
+
+@media screen and (min-width: 1200px) {}
