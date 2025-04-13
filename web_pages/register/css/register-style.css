@@ -1,0 +1,23 @@
+@import url('../../../style_main/original.css');
+
+.boxes{
+    grid-template-columns: 1fr 1fr;
+}
+
+.boxes input,
+.boxes .dropdown{
+    border: 1px solid var(--bg1-hover) !important;
+}
+
+.boxes input:focus,
+.boxes .dropdown button:focus{
+    box-shadow: inset 0 0 5px 0 var(--bg1-hover) !important;
+}
+
+.boxes input[type=tel]{
+    font-family: var(--font-number) !important;
+}
+
+.boxes input::placeholder{
+    font-family: var(--font-text) !important;
+}
