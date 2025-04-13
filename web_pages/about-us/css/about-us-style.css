@@ -1,0 +1,128 @@
+@import url('../../../style_main/original.css');
+
+.top-background {
+    background-image: url('../../../image/computer/image-2/IMG_20230916_173333_274.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-origin: padding-box;
+    background-position: center center;
+    height: 400px;
+    width: 100%;
+}
+
+.top-background::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.generator {
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.generator svg {
+    height: 100%;
+    width: 100%;
+}
+
+.generator svg path {
+    stroke: none;
+    fill: var(--bg-white);
+}
+
+.generator:nth-child(1){
+    display: none;
+}
+
+.history{
+    width: 100%;
+    border-radius: 35px 0;
+    padding: 62px 10px 15px 10px !important;
+    border: 1px solid var(--bg2);
+    top: 30px;
+}
+
+.history-img{
+    width: 100px;
+}
+
+/* statistics */
+
+.statistics {
+    background-color: var(--bg-gray);
+    color: var(--text-gray) !important;
+}
+
+.statistics div h2,
+.statistics div p {
+    color: var(--text-gray) !important;
+}
+
+.statistics h2 {
+    font-family: var(--font-number) !important;
+}
+
+/* pride */
+
+.img-card-pride {
+    width: 100px;
+    margin-right: 0;
+}
+
+/* facilities */
+
+.facilities{
+    width: 100%;
+}
+
+.facilities article{
+    cursor: pointer;
+    transition: flex-basis .2s;
+    flex-basis: 70px;
+    width: 100%;
+}
+
+.active{
+    flex-basis: 220px !important;
+}
+
+.active p {
+    opacity: 1 !important;
+}
+
+.facilities article::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    transition: .2s;
+    z-index: 0;
+}
+
+.facilities article.active::after{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.facilities article:hover::after{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.facilities article p{
+    bottom: 10px;
+    right: 10px;
+    color: var(--text-white) !important;
+    opacity: 0;
+    transition: .3s;
+}
