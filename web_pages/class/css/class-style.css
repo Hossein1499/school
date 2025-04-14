@@ -1,0 +1,49 @@
+@import url('../../../style_main/original.css');
+
+.day {
+    border: 1px solid var(--bg-gray);
+    flex: 1;
+}
+
+.day h5 {
+    transform: rotate(90deg);
+    width: 35px;
+    min-width: 35px;
+    white-space: nowrap;
+}
+
+.class-day {
+    border-right: 1px solid var(--bg-gray);
+    height: 90px;
+}
+
+.class-day::-webkit-scrollbar {
+    display: none;
+}
+
+.class-day article {
+    width: 165px;
+    min-width: 165px;
+}
+
+.class-day article h6{
+    white-space: nowrap;
+}
+
+.class-day article a {
+    border-radius: 0 10px 0 0;
+}
+
+.class-day article a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0 10px 0 0;
+}
+
+.time-class{
+    font-family: var(--font-number) !important;
+}
