@@ -13,7 +13,8 @@ const week7 = document.querySelector('.days .day:nth-of-type(7) .class-day');
 
 
 
-let url = 'https://jsonplaceholder.typicode.com/todos/';
+let backUrl = 'https://hossein1499.github.io/back/json/back.json';
+
 const request = async (gUrl) => {
     const response = await fetch(gUrl);
     if (response.status === 200) {
@@ -23,125 +24,126 @@ const request = async (gUrl) => {
         throw new Error('not found...');
     }
 }
+// request(backUrl).then(value => console.log(value)).catch(reason => console.log(reason));
 
 document.addEventListener('DOMContentLoaded', async () => {
 
-    const data = await request(url);
+    const data = await request(backUrl);
     for (let d of data) {
-        if (d.id == 1) {
+
+        if (d.week == 1) {
             let article = document.createElement('article');
             article.className = 'p-2 position-relative rounded-3 overflow-hidden bg-bg1 shadow-sm';
             article.innerHTML = `
-        <h6 class="text-center mb-1">کلاس${d.id}</h6>
-        <p class="text-center mx-auto m-0 fw-bold">شعبه ${d.userId}</p>
+        <h6 class="text-center mb-1">کلاس ${d.year} ${d.class}</h6>
+        <p class="text-center mx-auto m-0 fw-bold">شعبه ${d.branch}</p>
         <a class="eye-j position-absolute bottom-0 start-0 p-1 bg-primary" href="#">
             <i class="bi bi-eye-fill d-flex fs-6"></i>
         </a>
         <div class="d-none">
-            <p>${d.id}</p>
-            <p>${d.title}</p>
-            <p>${d.userId}</p>
+            <p>${d.lesson}</p>
+            <p>${d.text}</p>
+            <p>${d.time}</p>
         </div>`
             week1.appendChild(article);
         }
-        if (d.id == 2) {
+        else if (d.week == 2) {
             let article = document.createElement('article');
             article.className = 'p-2 position-relative rounded-3 overflow-hidden bg-bg1 shadow-sm';
             article.innerHTML = `
-        <h6 class="text-center mb-1">کلاس${d.id}</h6>
-        <p class="text-center mx-auto m-0 fw-bold">شعبه ${d.userId}</p>
+        <h6 class="text-center mb-1">کلاس ${d.year} ${d.class}</h6>
+        <p class="text-center mx-auto m-0 fw-bold">شعبه ${d.branch}</p>
         <a class="eye-j position-absolute bottom-0 start-0 p-1 bg-primary" href="#">
             <i class="bi bi-eye-fill d-flex fs-6"></i>
         </a>
         <div class="d-none">
-            <p>${d.id}</p>
-            <p>${d.title}</p>
-            <p>${d.userId}</p>
+            <p>${d.lesson}</p>
+            <p>${d.text}</p>
+            <p>${d.time}</p>
         </div>`
             week2.appendChild(article);
         }
-        if (d.id == 3) {
+        else if (d.week == 3) {
             let article = document.createElement('article');
             article.className = 'p-2 position-relative rounded-3 overflow-hidden bg-bg1 shadow-sm';
             article.innerHTML = `
-        <h6 class="text-center mb-1">کلاس${d.id}</h6>
-        <p class="text-center mx-auto m-0 fw-bold">شعبه ${d.userId}</p>
+        <h6 class="text-center mb-1">کلاس ${d.year} ${d.class}</h6>
+        <p class="text-center mx-auto m-0 fw-bold">شعبه ${d.branch}</p>
         <a class="eye-j position-absolute bottom-0 start-0 p-1 bg-primary" href="#">
             <i class="bi bi-eye-fill d-flex fs-6"></i>
         </a>
         <div class="d-none">
-            <p>${d.id}</p>
-            <p>${d.title}</p>
-            <p>${d.userId}</p>
+            <p>${d.lesson}</p>
+            <p>${d.text}</p>
+            <p>${d.time}</p>
         </div>`
             week3.appendChild(article);
         }
-        if (d.id == 4) {
+        else if (d.week == 4) {
             let article = document.createElement('article');
             article.className = 'p-2 position-relative rounded-3 overflow-hidden bg-bg1 shadow-sm';
             article.innerHTML = `
-        <h6 class="text-center mb-1">کلاس${d.id}</h6>
-        <p class="text-center mx-auto m-0 fw-bold">شعبه ${d.userId}</p>
+        <h6 class="text-center mb-1">کلاس ${d.year} ${d.class}</h6>
+        <p class="text-center mx-auto m-0 fw-bold">شعبه ${d.branch}</p>
         <a class="eye-j position-absolute bottom-0 start-0 p-1 bg-primary" href="#">
             <i class="bi bi-eye-fill d-flex fs-6"></i>
         </a>
         <div class="d-none">
-            <p>${d.id}</p>
-            <p>${d.title}</p>
-            <p>${d.userId}</p>
+            <p>${d.lesson}</p>
+            <p>${d.text}</p>
+            <p>${d.time}</p>
         </div>`
             week4.appendChild(article);
         }
-        if (d.id == 5) {
+        else if (d.week == 5) {
             let article = document.createElement('article');
             article.className = 'p-2 position-relative rounded-3 overflow-hidden bg-bg1 shadow-sm';
             article.innerHTML = `
-        <h6 class="text-center mb-1">کلاس${d.id}</h6>
-        <p class="text-center mx-auto m-0 fw-bold">شعبه ${d.userId}</p>
+        <h6 class="text-center mb-1">کلاس ${d.year} ${d.class}</h6>
+        <p class="text-center mx-auto m-0 fw-bold">شعبه ${d.branch}</p>
         <a class="eye-j position-absolute bottom-0 start-0 p-1 bg-primary" href="#">
             <i class="bi bi-eye-fill d-flex fs-6"></i>
         </a>
         <div class="d-none">
-            <p>${d.id}</p>
-            <p>${d.title}</p>
-            <p>${d.userId}</p>
+            <p>${d.lesson}</p>
+            <p>${d.text}</p>
+            <p>${d.time}</p>
         </div>`
             week5.appendChild(article);
         }
-        if (d.id == 6) {
+        else if (d.week == 6) {
             let article = document.createElement('article');
             article.className = 'p-2 position-relative rounded-3 overflow-hidden bg-bg1 shadow-sm';
             article.innerHTML = `
-        <h6 class="text-center mb-1">کلاس${d.id}</h6>
-        <p class="text-center mx-auto m-0 fw-bold">شعبه ${d.userId}</p>
+        <h6 class="text-center mb-1">کلاس ${d.year} ${d.class}</h6>
+        <p class="text-center mx-auto m-0 fw-bold">شعبه ${d.branch}</p>
         <a class="eye-j position-absolute bottom-0 start-0 p-1 bg-primary" href="#">
             <i class="bi bi-eye-fill d-flex fs-6"></i>
         </a>
         <div class="d-none">
-            <p>${d.id}</p>
-            <p>${d.title}</p>
-            <p>${d.userId}</p>
+            <p>${d.lesson}</p>
+            <p>${d.text}</p>
+            <p>${d.time}</p>
         </div>`
             week6.appendChild(article);
         }
-        if (d.id == 7) {
+        else if (d.week == 7) {
             let article = document.createElement('article');
             article.className = 'p-2 position-relative rounded-3 overflow-hidden bg-bg1 shadow-sm';
             article.innerHTML = `
-        <h6 class="text-center mb-1">کلاس${d.id}</h6>
-        <p class="text-center mx-auto m-0 fw-bold">شعبه ${d.userId}</p>
+        <h6 class="text-center mb-1">کلاس ${d.year} ${d.class}</h6>
+        <p class="text-center mx-auto m-0 fw-bold">شعبه ${d.branch}</p>
         <a class="eye-j position-absolute bottom-0 start-0 p-1 bg-primary" href="#">
             <i class="bi bi-eye-fill d-flex fs-6"></i>
         </a>
         <div class="d-none">
-            <p>${d.id}</p>
-            <p>${d.title}</p>
-            <p>${d.userId}</p>
+            <p>${d.lesson}</p>
+            <p>${d.text}</p>
+            <p>${d.time}</p>
         </div>`
             week7.appendChild(article);
         }
     }
-
 })
 
 days.addEventListener('click', async e => {
@@ -153,7 +155,7 @@ days.addEventListener('click', async e => {
             e.target.parentElement.children[3].children[0].textContent,
             e.target.parentElement.children[3].children[1].textContent,
             e.target.parentElement.children[3].children[2].textContent,
-            );
+        );
     }
 })
 
@@ -164,3 +166,4 @@ async function description(title1, title2, lessonData, textData, timeData) {
     text.innerHTML = textData;
     time.innerHTML = timeData;
 }
+
