@@ -159,3 +159,6 @@ article4.addEventListener('click', function (e) {
 article6.addEventListener('click', function (e) {
     window.location.href = 'web_pages/calendar/html/calendar.html';
 })
+article5.addEventListener('click', function (e) {
+    window.location.href = 'web_pages/class/html/class.html';
+})
