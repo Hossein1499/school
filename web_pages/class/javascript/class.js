@@ -16,7 +16,7 @@ const week7 = document.querySelector('.days .day:nth-of-type(7) .class-day');
 let backUrl = 'https://hossein1499.github.io/back/json/back.json';
 
 const request = async (gUrl) => {
-    const response = await fetch(gUrl);
+    const response = await fetch(gUrl, { cache: 'no-cache' });
     if (response.status === 200) {
         return await response.json();
     }
@@ -35,119 +35,126 @@ document.addEventListener('DOMContentLoaded', async () => {
             let article = document.createElement('article');
             article.className = 'p-2 position-relative rounded-3 overflow-hidden bg-bg1 shadow-sm';
             article.innerHTML = `
-        <h6 class="text-center mb-1">کلاس ${d.year} ${d.class}</h6>
-        <p class="text-center mx-auto m-0 fw-bold">شعبه ${d.branch}</p>
-        <a class="eye-j position-absolute bottom-0 start-0 p-1 bg-primary" href="#">
-            <i class="bi bi-eye-fill d-flex fs-6"></i>
-        </a>
-        <div class="d-none">
-            <p>${d.lesson}</p>
-            <p>${d.text}</p>
-            <p>${d.time}</p>
-        </div>`
+            <h6 class="text-center mb-1">کلاس ${d.year} ${d.class}</h6>
+            <p class="text-center mx-auto m-0 fw-bold">${d.branch}</p>
+            <a class="eye-j position-absolute bottom-0 start-0 p-1 bg-primary" href="#scrol-bottom">
+                <i class="bi bi-eye-fill d-flex fs-6"></i>
+            </a>
+            <div class="d-none">
+                <p>${d.lesson}</p>
+                <p>${d.text}</p>
+                <p>${d.time}</p>
+            </div>`
+
             week1.appendChild(article);
         }
         else if (d.week == 2) {
             let article = document.createElement('article');
             article.className = 'p-2 position-relative rounded-3 overflow-hidden bg-bg1 shadow-sm';
             article.innerHTML = `
-        <h6 class="text-center mb-1">کلاس ${d.year} ${d.class}</h6>
-        <p class="text-center mx-auto m-0 fw-bold">شعبه ${d.branch}</p>
-        <a class="eye-j position-absolute bottom-0 start-0 p-1 bg-primary" href="#">
-            <i class="bi bi-eye-fill d-flex fs-6"></i>
-        </a>
-        <div class="d-none">
-            <p>${d.lesson}</p>
-            <p>${d.text}</p>
-            <p>${d.time}</p>
-        </div>`
+            <h6 class="text-center mb-1">کلاس ${d.year} ${d.class}</h6>
+            <p class="text-center mx-auto m-0 fw-bold">${d.branch}</p>
+            <a class="eye-j position-absolute bottom-0 start-0 p-1 bg-primary" href="#scrol-bottom">
+                <i class="bi bi-eye-fill d-flex fs-6"></i>
+            </a>
+            <div class="d-none">
+                <p>${d.lesson}</p>
+                <p>${d.text}</p>
+                <p>${d.time}</p>
+            </div>`
+
             week2.appendChild(article);
         }
         else if (d.week == 3) {
             let article = document.createElement('article');
             article.className = 'p-2 position-relative rounded-3 overflow-hidden bg-bg1 shadow-sm';
             article.innerHTML = `
-        <h6 class="text-center mb-1">کلاس ${d.year} ${d.class}</h6>
-        <p class="text-center mx-auto m-0 fw-bold">شعبه ${d.branch}</p>
-        <a class="eye-j position-absolute bottom-0 start-0 p-1 bg-primary" href="#">
-            <i class="bi bi-eye-fill d-flex fs-6"></i>
-        </a>
-        <div class="d-none">
-            <p>${d.lesson}</p>
-            <p>${d.text}</p>
-            <p>${d.time}</p>
-        </div>`
+            <h6 class="text-center mb-1">کلاس ${d.year} ${d.class}</h6>
+            <p class="text-center mx-auto m-0 fw-bold">${d.branch}</p>
+            <a class="eye-j position-absolute bottom-0 start-0 p-1 bg-primary" href="#scrol-bottom">
+                <i class="bi bi-eye-fill d-flex fs-6"></i>
+            </a>
+            <div class="d-none">
+                <p>${d.lesson}</p>
+                <p>${d.text}</p>
+                <p>${d.time}</p>
+            </div>`
+
             week3.appendChild(article);
         }
         else if (d.week == 4) {
             let article = document.createElement('article');
             article.className = 'p-2 position-relative rounded-3 overflow-hidden bg-bg1 shadow-sm';
             article.innerHTML = `
-        <h6 class="text-center mb-1">کلاس ${d.year} ${d.class}</h6>
-        <p class="text-center mx-auto m-0 fw-bold">شعبه ${d.branch}</p>
-        <a class="eye-j position-absolute bottom-0 start-0 p-1 bg-primary" href="#">
-            <i class="bi bi-eye-fill d-flex fs-6"></i>
-        </a>
-        <div class="d-none">
-            <p>${d.lesson}</p>
-            <p>${d.text}</p>
-            <p>${d.time}</p>
-        </div>`
+            <h6 class="text-center mb-1">کلاس ${d.year} ${d.class}</h6>
+            <p class="text-center mx-auto m-0 fw-bold">${d.branch}</p>
+            <a class="eye-j position-absolute bottom-0 start-0 p-1 bg-primary" href="#scrol-bottom">
+                <i class="bi bi-eye-fill d-flex fs-6"></i>
+            </a>
+            <div class="d-none">
+                <p>${d.lesson}</p>
+                <p>${d.text}</p>
+                <p>${d.time}</p>
+            </div>`
+
             week4.appendChild(article);
         }
         else if (d.week == 5) {
             let article = document.createElement('article');
             article.className = 'p-2 position-relative rounded-3 overflow-hidden bg-bg1 shadow-sm';
             article.innerHTML = `
-        <h6 class="text-center mb-1">کلاس ${d.year} ${d.class}</h6>
-        <p class="text-center mx-auto m-0 fw-bold">شعبه ${d.branch}</p>
-        <a class="eye-j position-absolute bottom-0 start-0 p-1 bg-primary" href="#">
-            <i class="bi bi-eye-fill d-flex fs-6"></i>
-        </a>
-        <div class="d-none">
-            <p>${d.lesson}</p>
-            <p>${d.text}</p>
-            <p>${d.time}</p>
-        </div>`
+            <h6 class="text-center mb-1">کلاس ${d.year} ${d.class}</h6>
+            <p class="text-center mx-auto m-0 fw-bold">${d.branch}</p>
+            <a class="eye-j position-absolute bottom-0 start-0 p-1 bg-primary" href="#scrol-bottom">
+                <i class="bi bi-eye-fill d-flex fs-6"></i>
+            </a>
+            <div class="d-none">
+                <p>${d.lesson}</p>
+                <p>${d.text}</p>
+                <p>${d.time}</p>
+            </div>`
+
             week5.appendChild(article);
         }
         else if (d.week == 6) {
             let article = document.createElement('article');
             article.className = 'p-2 position-relative rounded-3 overflow-hidden bg-bg1 shadow-sm';
             article.innerHTML = `
-        <h6 class="text-center mb-1">کلاس ${d.year} ${d.class}</h6>
-        <p class="text-center mx-auto m-0 fw-bold">شعبه ${d.branch}</p>
-        <a class="eye-j position-absolute bottom-0 start-0 p-1 bg-primary" href="#">
-            <i class="bi bi-eye-fill d-flex fs-6"></i>
-        </a>
-        <div class="d-none">
-            <p>${d.lesson}</p>
-            <p>${d.text}</p>
-            <p>${d.time}</p>
-        </div>`
+            <h6 class="text-center mb-1">کلاس ${d.year} ${d.class}</h6>
+            <p class="text-center mx-auto m-0 fw-bold">${d.branch}</p>
+            <a class="eye-j position-absolute bottom-0 start-0 p-1 bg-primary" href="#scrol-bottom">
+                <i class="bi bi-eye-fill d-flex fs-6"></i>
+            </a>
+            <div class="d-none">
+                <p>${d.lesson}</p>
+                <p>${d.text}</p>
+                <p>${d.time}</p>
+            </div>`
+
             week6.appendChild(article);
         }
         else if (d.week == 7) {
             let article = document.createElement('article');
             article.className = 'p-2 position-relative rounded-3 overflow-hidden bg-bg1 shadow-sm';
             article.innerHTML = `
-        <h6 class="text-center mb-1">کلاس ${d.year} ${d.class}</h6>
-        <p class="text-center mx-auto m-0 fw-bold">شعبه ${d.branch}</p>
-        <a class="eye-j position-absolute bottom-0 start-0 p-1 bg-primary" href="#">
-            <i class="bi bi-eye-fill d-flex fs-6"></i>
-        </a>
-        <div class="d-none">
-            <p>${d.lesson}</p>
-            <p>${d.text}</p>
-            <p>${d.time}</p>
-        </div>`
+            <h6 class="text-center mb-1">کلاس ${d.year} ${d.class}</h6>
+            <p class="text-center mx-auto m-0 fw-bold">${d.branch}</p>
+            <a class="eye-j position-absolute bottom-0 start-0 p-1 bg-primary" href="#scrol-bottom">
+                <i class="bi bi-eye-fill d-flex fs-6"></i>
+            </a>
+            <div class="d-none">
+                <p>${d.lesson}</p>
+                <p>${d.text}</p>
+                <p>${d.time}</p>
+            </div>`
+
             week7.appendChild(article);
         }
     }
 })
 
 days.addEventListener('click', async e => {
-    e.preventDefault();
+    // e.preventDefault();
     if (e.target.classList.contains('eye-j') == true) {
 
         description(e.target.parentElement.children[0].textContent,
