@@ -44,6 +44,11 @@
     height: calc(100vh - 115px);
 }
 
+.headline section:first-of-type div,
+.full-color {
+    cursor: pointer;
+}
+
 .color-brown {
     color: #d7b366 !important;
 }
@@ -76,6 +81,19 @@
     height: 35px;
 }
 
+.full-color {
+    border-color: var(--border-color-box) !important;
+}
+
+.full-color:active {
+    transform: scale(.95);
+}
+
+/* parent-month */
+.parent-month {
+    grid-template-columns: 100%;
+}
+
 /* month */
 .month {
     border-color: var(--border-color-box) !important;
@@ -83,4 +101,22 @@
 
 .month h2 {
     color: var(--bg2-hover) !important;
+}
+
+.month article {
+    cursor: pointer;
+    transition: .2s;
+}
+
+.month article div p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+/* active */
+article.active div p {
+    display: block !important;
 }

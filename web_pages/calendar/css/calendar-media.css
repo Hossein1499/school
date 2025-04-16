@@ -1,6 +1,10 @@
 @media screen and (min-width: 576px) {}
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    .parent-month{
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 @media screen and (min-width: 992px) {
     .headline {
@@ -14,6 +18,10 @@
     .sidebar-calender .offcanvas-lg{
         width: 100%;
     }
+    .parent-month{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
 }
 
 @media screen and (min-width: 1200px) {}
