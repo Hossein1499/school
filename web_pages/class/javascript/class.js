@@ -13,7 +13,7 @@ const week7 = document.querySelector('.days .day:nth-of-type(7) .class-day');
 
 
 
-let backUrl = 'https://hossein1499.github.io/back/json/back.json';
+let backUrl = 'https://hossein1499.github.io/back/json/back-class.json';
 
 const request = async (gUrl) => {
     const response = await fetch(gUrl, { cache: 'no-cache' });
