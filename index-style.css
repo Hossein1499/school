@@ -328,3 +328,65 @@
     z-index: -1;
 }
 
+/* /////////////////////////////////////scroll///////////////////////////////////////// */
+body > section.container.bg-white.shadow{
+    overflow: hidden;
+}
+.quick article:nth-of-type(even){
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .5s;
+}
+.quick article:nth-of-type(odd){
+    transform: translateX(50%);
+    opacity: 0;
+    transition: .5s;
+}
+.quick-show{
+    transform: none !important;
+    opacity: 1 !important;
+}
+
+.person>article:nth-of-type(even)>div>div:first-of-type {
+    transform: rotate(-45deg) translate(-65px,40px);
+    transition: .5s;
+}
+.person>article:nth-of-type(odd)>div>div:first-of-type {
+    transform: rotate(45deg) translate(65px,40px);
+    transition: .5s;
+}
+.person-show{
+    transform: none !important;
+}
+
+.pride article:nth-of-type(even){
+    transform: translateX(-150%);
+    transition: .7s;
+}
+.pride article:nth-of-type(odd){
+    transform: translateX(150%);
+    transition: .7s;
+}
+.pride-show{
+    transform: none !important;
+}
+
+.notification>article{
+    margin-left: 100%;
+    width: 70px;
+    transition: .5s;
+    overflow: hidden;
+}
+.notification>article small{
+    white-space: nowrap;
+}
+.notification>article div:last-of-type{
+    display: none;
+}
+.notification-show{
+    margin-left: 0 !important;
+    width: 100% !important;
+}
+.notification-show div:last-of-type{
+    display: block !important;
+}

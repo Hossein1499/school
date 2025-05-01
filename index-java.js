@@ -162,3 +162,38 @@ article6.addEventListener('click', function (e) {
 article5.addEventListener('click', function (e) {
     window.location.href = 'web_pages/class/html/class.html';
 })
+
+/////////////////////////////////////////scroll//////////////////////////////////////////////
+
+const heightWeb = window.innerHeight;
+const quicks = document.querySelectorAll('.quick article');
+const persons = document.querySelectorAll('.person>article');
+const prides = document.querySelectorAll('.pride>article');
+const notifications = document.querySelectorAll('.notification>article');
+
+window.addEventListener('scroll', () => {
+    Array.from(quicks).forEach(element => {
+        const boxTop = element.getBoundingClientRect().top;
+        if (boxTop < heightWeb / 1.2) {
+            element.classList.add('quick-show');
+        }
+    })
+    Array.from(persons).forEach(element => {
+        const boxTop = element.getBoundingClientRect().top;
+        if (boxTop < heightWeb / 1.2) {
+            element.children[0].children[0].classList.add('person-show');
+        }
+    })
+    Array.from(prides).forEach(element => {
+        const boxTop = element.getBoundingClientRect().top;
+        if (boxTop < heightWeb / 1.2) {
+            element.classList.add('pride-show');
+        }
+    })
+    Array.from(notifications).forEach(element => {
+        const boxTop = element.getBoundingClientRect().top;
+        if (boxTop < heightWeb / 1.2) {
+            element.classList.add('notification-show');
+        }
+    })
+})
