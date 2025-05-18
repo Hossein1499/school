@@ -140,6 +140,8 @@ iconSurvey5.addEventListener('click', function (e) {
     e.preventDefault();
 });
 
+////////////////////////////////////////////link/////////////////////////////////////////////////
+
 let article1 = document.querySelector('.quick article:nth-of-type(1)');
 let article2 = document.querySelector('.quick article:nth-of-type(2)');
 let article3 = document.querySelector('.quick article:nth-of-type(3)');
